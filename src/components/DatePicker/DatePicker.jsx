@@ -143,9 +143,10 @@ export const DatePicker = ({
         }
     };
 
-    const CaptionElement = shouldShowYearPicker && currentMonth
-        ? ({ date }) => <MonthYearSelector date={date} currentMonth={currentMonth} onChange={handleMonthChange} />
-        : undefined;
+    const CaptionElement =
+        shouldShowYearPicker && currentMonth
+            ? ({ date }) => <MonthYearSelector date={date} currentMonth={currentMonth} onChange={handleMonthChange} />
+            : undefined;
 
     const renderDay = (date) => {
         const tooltipContent = getTooltip?.(date);

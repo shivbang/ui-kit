@@ -137,7 +137,7 @@ const RangeDatePicker = ({
                 disabledDays={isDisabledStartDays}
                 navbarElement={NavbarElement}
                 captionElement={CaptionStartElement}
-                selectedDays={[selectedDays.from, selectedDays]}
+                selectedDays={[selectedDays?.from, selectedDays]}
                 renderDay={renderStartDay}
                 getTooltip={getTooltip}
                 onDayClick={(day, options, event) => handleDayClick(day, options, event, true)}
